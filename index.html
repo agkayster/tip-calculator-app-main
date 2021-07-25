@@ -1,44 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+		<title>Frontend Mentor | Tip calculator app</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 
-  Bill
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<div class="allContainer">
+			<h1 class="splitter">SPLI<br />TTER</h1>
+			<div class="container">
+				<div class="inputBill">
+					<p class="bill">Bill</p>
+					<input
+						class="input billInput"
+						id="billInput"
+						type="text"
+						placeholder="$"
+					/>
+				</div>
+				<div class="tipCalc">
+					<p class="tip">Select Tip %</p>
+					<div class="buttons">
+						<button onclick="getFivePercent()" class="button five">
+							5%
+						</button>
+						<button
+							class="button ten"
+							onclick="getTenPercent()"
+							type="button"
+						>
+							10%
+						</button>
+						<button
+							class="button fifteen"
+							onclick="getFifteenPercent()"
+							type="button"
+						>
+							15%
+						</button>
+						<button
+							class="button twentyFive"
+							onclick="getTwentyFivePercent()"
+							type="button"
+						>
+							25%
+						</button>
+						<button
+							class="button fifty"
+							onclick="getFiftyPercent()"
+							type="button"
+						>
+							50%
+						</button>
+						<input
+							type="text"
+							class="input custom"
+							placeholder="Custom"
+							id="custom"
+							onchange="getCustomCalculation()"
+						/>
+					</div>
+				</div>
+				<div class="peopleCalc">
+					<p class="people">
+						Number of People<span class="zeroInput"></span>
+					</p>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+					<input
+						class="input peopN"
+						type="text"
+						placeholder=""
+						id="peopN"
+					/>
+				</div>
+				<div class="tipTotal">
+					<p class="tipperAmt">
+						Tip Amount <br />
+						<span class="person">/ person</span>
+						<span class="tipFig" id="tipFig">$4.27</span>
+					</p>
+					<p class="totalPerson">
+						Total <br />
+						<span class="person">/ person</span>
+						<span class="totFig">$32.79</span>
+					</p>
+					<button
+						class="button reset"
+						type="reset"
+						onclick="resetCalculator()"
+					>
+						RESET
+					</button>
+				</div>
 
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+				<div class="attribution">
+					Challenge by
+					<a
+						href="https://www.frontendmentor.io?ref=challenge"
+						target="_blank"
+						>Frontend Mentor</a
+					>. Coded by <a href="#">Your Name Here</a>.
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

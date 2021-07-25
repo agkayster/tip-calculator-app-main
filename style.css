@@ -1,0 +1,248 @@
+@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	line-height: 1.6;
+	font-size: 24px;
+}
+
+.splitter {
+	font-weight: 500;
+	font-size: 24px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	padding: 40px;
+	letter-spacing: 5px;
+}
+
+.container {
+	border-style: hidden;
+	border-radius: 16px 16px 0 0;
+	background-color: hsl(0, 0%, 100%);
+	padding: 50px;
+}
+
+.allContainer {
+	background-color: hsl(172, 67%, 45%);
+}
+
+.inputBill {
+	margin-bottom: 20px;
+}
+
+button {
+	width: 129.5px;
+	height: 30px;
+}
+
+.buttons {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+button.button.reset {
+	background-color: hsl(172, 67%, 45%);
+}
+
+button.button.five {
+	font-family: 'Space Mono', monospace;
+	font-weight: 700;
+	background-color: hsl(183, 100%, 15%);
+	color: hsl(0, 0%, 100%);
+}
+
+button.button.five:hover {
+	background-color: hsl(172, 67%, 45%);
+}
+
+button.button.ten {
+	font-family: 'Space Mono', monospace;
+	font-weight: 700;
+	background-color: hsl(183, 100%, 15%);
+	color: hsl(0, 0%, 100%);
+}
+
+button.button.ten:hover {
+	background-color: hsl(172, 67%, 45%);
+}
+
+button.button.fifteen {
+	font-family: 'Space Mono', monospace;
+	font-weight: 700;
+	background-color: hsl(183, 100%, 15%);
+	color: hsl(0, 0%, 100%);
+}
+
+button.button.fifteen:hover {
+	background-color: hsl(172, 67%, 45%);
+}
+
+button.button.twentyFive {
+	font-family: 'Space Mono', monospace;
+	font-weight: 700;
+	background-color: hsl(183, 100%, 15%);
+	color: hsl(0, 0%, 100%);
+}
+
+button.button.twentyFive:hover {
+	background-color: hsl(172, 67%, 45%);
+}
+
+button.button.fifty {
+	font-family: 'Space Mono', monospace;
+	font-weight: 700;
+	background-color: hsl(183, 100%, 15%);
+	color: hsl(0, 0%, 100%);
+}
+
+button.button.fifty:hover {
+	background-color: hsl(172, 67%, 45%);
+}
+
+button.button.custom {
+	font-family: 'Space Mono', monospace;
+	font-weight: 700;
+	background-color: hsl(189, 41%, 97%);
+}
+
+.peopleCalc {
+	margin-top: 20px;
+}
+
+.tipTotal {
+	border-style: hidden;
+	margin-top: 20px;
+	border-radius: 16px;
+	height: 250px;
+	padding: 20px;
+	background-color: hsl(183, 100%, 15%);
+}
+
+.totalPerson {
+	margin-top: 20px;
+}
+
+.reset {
+	margin-top: 30px;
+	width: 230px;
+	font-family: 'Space Mono', monospace;
+	font-weight: 700;
+}
+
+.tipFig {
+	float: right;
+	color: hsl(172, 67%, 45%);
+}
+
+.totFig {
+	float: right;
+	color: hsl(172, 67%, 45%);
+}
+
+.tipperAmt {
+	font-family: 'Space Mono', monospace;
+	font-size: 12px;
+	color: hsl(0, 0%, 100%);
+	font-weight: 700;
+}
+
+.totalPerson {
+	font-family: 'Space Mono', monospace;
+	font-size: 12px;
+	color: hsl(0, 0%, 100%);
+	font-weight: 700;
+}
+
+.person {
+	font-family: 'Space Mono', monospace;
+	font-size: 10px;
+	color: hsl(172, 67%, 45%);
+}
+
+.tipFig {
+	font-family: 'Space Mono', monospace;
+	font-weight: 900;
+	font-size: 20px;
+}
+
+.totFig {
+	font-family: 'Space Mono', monospace;
+	font-weight: 900;
+	font-size: 20px;
+}
+
+.people {
+	font-family: 'Space Mono', monospace;
+	font-weight: 700;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+.tip {
+	font-family: 'Space Mono', monospace;
+	font-weight: 700;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+.bill {
+	font-family: 'Space Mono', monospace;
+	font-weight: 700;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+input.input.peopN {
+	background-color: hsl(189, 41%, 97%);
+}
+
+input.input.peopN:focus {
+	border-color: hsl(172, 67%, 45%);
+}
+
+input.input.billInput {
+	background-color: hsl(189, 41%, 97%);
+}
+
+.input::after {
+	text-align: right;
+}
+
+input.input.billInput:focus {
+	border-color: hsl(172, 67%, 45%);
+}
+
+.billInput {
+	width: 60vw;
+}
+
+.zeroInput {
+	float: right;
+}
+
+input.input.custom {
+	width: 130px;
+	font-family: 'Space Mono', monospace;
+	text-align: center;
+	font-weight: 900;
+	color: hsl(172, 67%, 45%);
+}
+
+input.input.custom:focus {
+	border-color: hsl(172, 67%, 45%);
+}
