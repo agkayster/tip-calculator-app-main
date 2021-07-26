@@ -65,6 +65,10 @@ const getFifteenPercent = () => {
 			(getFifteen * newGetBill) /
 			newGetPeople
 		).toFixed(2)}`;
+		document.getElementById('totFig').innerHTML = `$${(
+			((getFifteen * newGetBill) / newGetPeople) *
+			7.68
+		).toFixed(2)}`;
 		document.querySelector('.peopN').style.borderColor =
 			'hsl(172, 67%, 45%)';
 		document.querySelector('.zeroInput').innerHTML = '';
@@ -84,6 +88,10 @@ const getTwentyFivePercent = () => {
 			(getTwentyFive * newGetBill) /
 			newGetPeople
 		).toFixed(2)}`;
+		document.getElementById('totFig').innerHTML = `$${(
+			((getTwentyFive * newGetBill) / newGetPeople) *
+			7.68
+		).toFixed(2)}`;
 		document.querySelector('.peopN').style.borderColor =
 			'hsl(172, 67%, 45%)';
 		document.querySelector('.zeroInput').innerHTML = '';
@@ -102,6 +110,10 @@ const getFiftyPercent = () => {
 		document.getElementById('tipFig').innerHTML = `$${(
 			(getFifty * newGetBill) /
 			newGetPeople
+		).toFixed(2)}`;
+		document.getElementById('totFig').innerHTML = `$${(
+			((getFifty * newGetBill) / newGetPeople) *
+			7.68
 		).toFixed(2)}`;
 		document.querySelector('.peopN').style.borderColor =
 			'hsl(172, 67%, 45%)';
@@ -125,6 +137,10 @@ const getCustomCalculation = () => {
 			((newCustomPercent / 100) * newGetBill) /
 			newGetPeople
 		).toFixed(2)}`;
+		document.getElementById('totFig').innerHTML = `$${(
+			(((newCustomPercent / 100) * newGetBill) / newGetPeople) *
+			7.68
+		).toFixed(2)}`;
 		document.querySelector('.peopN').style.borderColor =
 			'hsl(172, 67%, 45%)';
 		document.querySelector('.zeroInput').innerHTML = '';
@@ -133,6 +149,7 @@ const getCustomCalculation = () => {
 
 const resetCalculator = () => {
 	document.getElementById('tipFig').innerHTML = '$' + 0;
+	document.getElementById('totFig').innerHTML = '$' + 0;
 	document.getElementById('billInput').value = '';
 	document.getElementById('peopN').value = '';
 	document.getElementById('custom').value = '';

@@ -29,69 +29,74 @@
 		<div class="allContainer">
 			<h1 class="splitter">SPLI<br />TTER</h1>
 			<div class="container">
-				<div class="inputBill">
-					<p class="bill">Bill</p>
-					<input
-						class="input billInput"
-						id="billInput"
-						type="text"
-						placeholder="$"
-					/>
-				</div>
-				<div class="tipCalc">
-					<p class="tip">Select Tip %</p>
-					<div class="buttons">
-						<button onclick="getFivePercent()" class="button five">
-							5%
-						</button>
-						<button
-							class="button ten"
-							onclick="getTenPercent()"
-							type="button"
-						>
-							10%
-						</button>
-						<button
-							class="button fifteen"
-							onclick="getFifteenPercent()"
-							type="button"
-						>
-							15%
-						</button>
-						<button
-							class="button twentyFive"
-							onclick="getTwentyFivePercent()"
-							type="button"
-						>
-							25%
-						</button>
-						<button
-							class="button fifty"
-							onclick="getFiftyPercent()"
-							type="button"
-						>
-							50%
-						</button>
+				<div class="billPeople">
+					<div class="inputBill">
+						<p class="bill">Bill</p>
 						<input
+							class="input billInput"
+							id="billInput"
 							type="text"
-							class="input custom"
-							placeholder="Custom"
-							id="custom"
-							onchange="getCustomCalculation()"
+							placeholder="$"
 						/>
 					</div>
-				</div>
-				<div class="peopleCalc">
-					<p class="people">
-						Number of People<span class="zeroInput"></span>
-					</p>
+					<div class="tipCalc">
+						<p class="tip">Select Tip %</p>
+						<div class="buttons">
+							<button
+								onclick="getFivePercent()"
+								class="button five"
+							>
+								5%
+							</button>
+							<button
+								class="button ten"
+								onclick="getTenPercent()"
+								type="button"
+							>
+								10%
+							</button>
+							<button
+								class="button fifteen"
+								onclick="getFifteenPercent()"
+								type="button"
+							>
+								15%
+							</button>
+							<button
+								class="button twentyFive"
+								onclick="getTwentyFivePercent()"
+								type="button"
+							>
+								25%
+							</button>
+							<button
+								class="button fifty"
+								onclick="getFiftyPercent()"
+								type="button"
+							>
+								50%
+							</button>
+							<input
+								type="text"
+								class="input custom"
+								placeholder="Custom"
+								id="custom"
+								onchange="getCustomCalculation()"
+							/>
+						</div>
+					</div>
+					<div class="peopleCalc">
+						<p class="people">
+							Number of People<span class="zeroInput"></span>
+						</p>
 
-					<input
-						class="input peopN"
-						type="text"
-						placeholder=""
-						id="peopN"
-					/>
+						<input
+							class="input peopN"
+							type="text"
+							placeholder=""
+							id="peopN"
+						/>
+					</div>
 				</div>
 				<div class="tipTotal">
 					<p class="tipperAmt">
@@ -102,7 +107,7 @@
 					<p class="totalPerson">
 						Total <br />
 						<span class="person">/ person</span>
-						<span class="totFig">$32.79</span>
+						<span class="totFig" id="totFig">$32.79</span>
 					</p>
 					<button
 						class="button reset"
@@ -112,15 +117,14 @@
 						RESET
 					</button>
 				</div>
-
-				<div class="attribution">
-					Challenge by
-					<a
-						href="https://www.frontendmentor.io?ref=challenge"
-						target="_blank"
-						>Frontend Mentor</a
-					>. Coded by <a href="#">Your Name Here</a>.
-				</div>
+			</div>
+			<div class="attribution">
+				Challenge by
+				<a
+					href="https://www.frontendmentor.io?ref=challenge"
+					target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="#">Ejike Chiboka</a>.
 			</div>
 		</div>
 	</body>
