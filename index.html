@@ -27,16 +27,26 @@
 	</head>
 	<body>
 		<div class="allContainer">
-			<h1 class="splitter">SPLI<br />TTER</h1>
+			<header>
+				<div class="header-img">
+					<img src="./images/logo.svg" alt="logo" class="img-logo" />
+				</div>
+			</header>
 			<div class="container">
 				<div class="billPeople">
 					<div class="inputBill">
-						<p class="bill">Bill</p>
+						<label for="bill" class="bill">Bill</label>
 						<input
 							class="input billInput"
 							id="billInput"
-							type="text"
-							placeholder="$"
+							type="number"
+							required
+							name="bill"
+						/>
+						<img
+							src="./images/icon-dollar.svg"
+							alt="dollar icon"
+							class="dollar-icon"
 						/>
 					</div>
 					<div class="tipCalc">
