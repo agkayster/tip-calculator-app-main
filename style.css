@@ -477,6 +477,21 @@
 		background-color: hsl(189, 41%, 97%);
 	}
 
+	.peopN {
+		text-align: right;
+		font-family: 'Space Mono', monospace;
+		transition: 0.3s ease-out;
+		display: block;
+		font-weight: 700;
+		font-size: 24px;
+	}
+
+	.persons {
+		position: absolute;
+		top: 350px;
+		left: 60px;
+	}
+
 	input.input.peopN:focus {
 		border-color: hsl(172, 67%, 45%);
 	}
@@ -493,6 +508,9 @@
 		width: 60vw;
 		text-align: right;
 		transition: 0.3s ease-out;
+		font-family: 'Space Mono', monospace;
+		font-weight: 700;
+		font-size: 24px;
 	}
 
 	.dollar-icon {

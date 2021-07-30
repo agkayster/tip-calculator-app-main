@@ -19,6 +19,7 @@ const getFivePercent = () => {
 	let newGetBill = +getBill;
 	let getPeople = document.getElementById('peopN').value;
 	let newGetPeople = +getPeople;
+	console.log('new get people', typeof newGetPeople);
 	if (newGetPeople === 0) {
 		document.querySelector('.zeroInput').innerHTML = "Can't be zero!";
 		document.querySelector('.peopN').style.borderColor = 'red';
@@ -26,6 +27,10 @@ const getFivePercent = () => {
 		document.getElementById('tipFig').innerHTML = `$ ${(
 			(getFive * newGetBill) /
 			newGetPeople
+		).toFixed(2)}`;
+		document.getElementById('totFig').innerHTML = `$${(
+			((getFive * newGetBill) / newGetPeople) *
+			7.68
 		).toFixed(2)}`;
 		document.querySelector('.peopN').style.borderColor =
 			'hsl(172, 67%, 45%)';
@@ -45,6 +50,10 @@ const getTenPercent = () => {
 		document.getElementById('tipFig').innerHTML = `$ ${(
 			(getTen * newGetBill) /
 			newGetPeople
+		).toFixed(2)}`;
+		document.getElementById('totFig').innerHTML = `$${(
+			((getTen * newGetBill) / newGetPeople) *
+			7.68
 		).toFixed(2)}`;
 		document.querySelector('.peopN').style.borderColor =
 			'hsl(172, 67%, 45%)';
