@@ -21,8 +21,8 @@ const getFivePercent = () => {
 	let newGetPeople = +getPeople;
 	console.log('new get people', typeof newGetPeople);
 	if (newGetPeople === 0) {
-		document.querySelector('.zeroInput').innerHTML = "Can't be zero!";
-		document.querySelector('.peopN').style.borderColor = 'red';
+		document.getElementById('tipFig').innerHTML = `$${0}`;
+		document.getElementById('totFig').innerHTML = `$${0}`;
 	} else {
 		document.getElementById('tipFig').innerHTML = `$ ${(
 			(getFive * newGetBill) /
@@ -32,9 +32,6 @@ const getFivePercent = () => {
 			((getFive * newGetBill) / newGetPeople) *
 			7.68
 		).toFixed(2)}`;
-		document.querySelector('.peopN').style.borderColor =
-			'hsl(172, 67%, 45%)';
-		document.querySelector('.zeroInput').innerHTML = '';
 	}
 };
 
@@ -44,8 +41,8 @@ const getTenPercent = () => {
 	let getPeople = document.getElementById('peopN').value;
 	let newGetPeople = +getPeople;
 	if (newGetPeople === 0) {
-		document.querySelector('.zeroInput').innerHTML = "Can't be zero!";
-		document.querySelector('.peopN').style.borderColor = 'red';
+		document.getElementById('tipFig').innerHTML = `$${0}`;
+		document.getElementById('totFig').innerHTML = `$${0}`;
 	} else {
 		document.getElementById('tipFig').innerHTML = `$ ${(
 			(getTen * newGetBill) /
@@ -55,9 +52,6 @@ const getTenPercent = () => {
 			((getTen * newGetBill) / newGetPeople) *
 			7.68
 		).toFixed(2)}`;
-		document.querySelector('.peopN').style.borderColor =
-			'hsl(172, 67%, 45%)';
-		document.querySelector('.zeroInput').innerHTML = '';
 	}
 };
 
@@ -67,8 +61,8 @@ const getFifteenPercent = () => {
 	let getPeople = document.getElementById('peopN').value;
 	let newGetPeople = +getPeople;
 	if (newGetPeople === 0) {
-		document.querySelector('.zeroInput').innerHTML = "Can't be zero!";
-		document.querySelector('.peopN').style.borderColor = 'red';
+		document.getElementById('tipFig').innerHTML = `$${0}`;
+		document.getElementById('totFig').innerHTML = `$${0}`;
 	} else {
 		document.getElementById('tipFig').innerHTML = `$${(
 			(getFifteen * newGetBill) /
@@ -78,9 +72,6 @@ const getFifteenPercent = () => {
 			((getFifteen * newGetBill) / newGetPeople) *
 			7.68
 		).toFixed(2)}`;
-		document.querySelector('.peopN').style.borderColor =
-			'hsl(172, 67%, 45%)';
-		document.querySelector('.zeroInput').innerHTML = '';
 	}
 };
 
@@ -90,8 +81,8 @@ const getTwentyFivePercent = () => {
 	let getPeople = document.getElementById('peopN').value;
 	let newGetPeople = +getPeople;
 	if (newGetPeople === 0) {
-		document.querySelector('.zeroInput').innerHTML = "Can't be zero!";
-		document.querySelector('.peopN').style.borderColor = 'red';
+		document.getElementById('tipFig').innerHTML = `$${0}`;
+		document.getElementById('totFig').innerHTML = `$${0}`;
 	} else {
 		document.getElementById('tipFig').innerHTML = `$${(
 			(getTwentyFive * newGetBill) /
@@ -101,9 +92,6 @@ const getTwentyFivePercent = () => {
 			((getTwentyFive * newGetBill) / newGetPeople) *
 			7.68
 		).toFixed(2)}`;
-		document.querySelector('.peopN').style.borderColor =
-			'hsl(172, 67%, 45%)';
-		document.querySelector('.zeroInput').innerHTML = '';
 	}
 };
 
@@ -113,8 +101,8 @@ const getFiftyPercent = () => {
 	let getPeople = document.getElementById('peopN').value;
 	let newGetPeople = +getPeople;
 	if (newGetPeople === 0) {
-		document.querySelector('.zeroInput').innerHTML = "Can't be zero!";
-		document.querySelector('.peopN').style.borderColor = 'red';
+		document.getElementById('tipFig').innerHTML = `$${0}`;
+		document.getElementById('totFig').innerHTML = `$${0}`;
 	} else {
 		document.getElementById('tipFig').innerHTML = `$${(
 			(getFifty * newGetBill) /
@@ -124,9 +112,6 @@ const getFiftyPercent = () => {
 			((getFifty * newGetBill) / newGetPeople) *
 			7.68
 		).toFixed(2)}`;
-		document.querySelector('.peopN').style.borderColor =
-			'hsl(172, 67%, 45%)';
-		document.querySelector('.zeroInput').innerHTML = '';
 	}
 };
 
@@ -139,8 +124,8 @@ const getCustomCalculation = () => {
 	let getPeople = document.getElementById('peopN').value;
 	let newGetPeople = +getPeople;
 	if (newGetPeople === 0) {
-		document.querySelector('.zeroInput').innerHTML = "Can't be zero!";
-		document.querySelector('.peopN').style.borderColor = 'red';
+		document.getElementById('tipFig').innerHTML = `$${0}`;
+		document.getElementById('totFig').innerHTML = `$${0}`;
 	} else {
 		document.getElementById('tipFig').innerHTML = `$${(
 			((newCustomPercent / 100) * newGetBill) /
@@ -150,6 +135,16 @@ const getCustomCalculation = () => {
 			(((newCustomPercent / 100) * newGetBill) / newGetPeople) *
 			7.68
 		).toFixed(2)}`;
+	}
+};
+
+const getNumberPeople = () => {
+	let getPeople = document.getElementById('peopN').value;
+	let newGetPeople = +getPeople;
+	if (newGetPeople === 0) {
+		document.querySelector('.zeroInput').innerHTML = "Can't be zero!";
+		document.querySelector('.peopN').style.borderColor = 'red';
+	} else {
 		document.querySelector('.peopN').style.borderColor =
 			'hsl(172, 67%, 45%)';
 		document.querySelector('.zeroInput').innerHTML = '';
@@ -162,4 +157,6 @@ const resetCalculator = () => {
 	document.getElementById('billInput').value = '';
 	document.getElementById('peopN').value = '';
 	document.getElementById('custom').value = '';
+	document.querySelector('.peopN').style.borderColor = 'hsl(172, 67%, 45%)';
+	document.querySelector('.zeroInput').innerHTML = '';
 };
